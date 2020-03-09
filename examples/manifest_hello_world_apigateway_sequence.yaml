@@ -1,0 +1,19 @@
+packages:
+  hello_world_package:
+    version: 1.0
+    license: Apache-2.0
+    actions:
+      hello_basic:
+        function: src/hello.js
+      hello_goodday:
+        function: src/hello_goodday.js
+    sequences:
+      hello_world:
+        actions: hello_basic, hello_goodday
+        web: true
+    apis:
+      hello-world:
+        hello:
+          world:
+            hello_world:
+              method: GET
