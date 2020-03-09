@@ -1,0 +1,9 @@
+packages:
+        SlackPackage:
+                dependencies:
+                        slack-package-to-post-messages:
+                                location: /whisk.system/slack
+                                inputs:
+                                        username: $SLACK_USERNAME
+                                        url: $SLACK_URL
+                                        channel: $SLACK_CHANNEL
